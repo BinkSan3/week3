@@ -1,0 +1,60 @@
+nav {
+  display: flex;
+  padding: 10px 20px;
+  background-color: violet;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+#navleft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav img {
+  height: 50px;
+  margin: 20px 10px;
+}
+
+#navleft img,
+#navleft p {
+  margin: 0px 20px;
+}
+#navleft a {
+  text-decoration: none;
+  color: wheat;
+}
+
+#navButton {
+  padding: 2px 20px;
+  height: fit-content;
+  border-color: wheat;
+}
+
+#centreMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#disappearingBoxes {
+  display: none;
+  display: flex;
+  justify-content: center;
+}
+#disappearingBoxes p {
+  background-color: aquamarine;
+  width: 200px;
+  align-self: center;
+}
+#disappearingBoxes div {
+  margin: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: bisque;
+  width: 200px;
+  padding: 0;
+}
