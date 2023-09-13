@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2 {
+  color: #134f5c;
+}
+
+img {
+  width: 250px;
+  border-radius: 12%;
+}
+
+#scoreCard {
+  padding: 30px;
+  background-color: #134f5c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 300px;
+}
+
+#scoreCard p {
+  align-self: flex-start;
+  color: white;
+}
+
+#buttons button:hover {
+  background-color: black;
+}
+
+#buttons button {
+  background-color: #f44336;
+  border: solid #f2e0b3 5px;
+  border-radius: 8px;
+  padding: 10px;
+  color: #f2e0b3;
+  font-weight: 750;
+  letter-spacing: 1px;
+}
