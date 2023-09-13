@@ -41,6 +41,7 @@ const reset = () => {
 restart.addEventListener("click", () => {
   reset();
 });
+
 //create function that generates random number between 1-6
 //have that number change the img src to the corresponding die number //DONE
 

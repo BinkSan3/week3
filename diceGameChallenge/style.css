@@ -29,10 +29,6 @@ img {
   color: white;
 }
 
-#buttons button:hover {
-  background-color: black;
-}
-
 #buttons button {
   background-color: #f44336;
   border: solid #f2e0b3 5px;
@@ -41,4 +37,8 @@ img {
   color: #f2e0b3;
   font-weight: 750;
   letter-spacing: 1px;
+}
+
+#buttons button:not(:disabled):hover {
+  background-color: black !important;
 }
