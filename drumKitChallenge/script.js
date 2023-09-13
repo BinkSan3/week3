@@ -147,6 +147,10 @@ const playSoundByID = (audioID) => {
   if (audio != null) {
     audio.currentTime = 0;
     audio.play();
+    document.getElementById(audioID).style.backgroundColor = "red";
+    setTimeout(() => {
+      document.getElementById(audioID).style.backgroundColor = "pink";
+    }, 100); //this works! need to find out a way that doesnt involve manually inputting the color as a string
   }
 };
 
@@ -156,3 +160,5 @@ allSounds.addEventListener("click", (clickEvent) => {
 document.addEventListener("keydown", (keyDownEvent) => {
   playSoundByID(keyDownEvent.code);
 });
+
+//This is perfect by changing the parent button ids and the audio data id to match the keyDownevent.code. It allowed me to use the event object and use a part of that information and plug it straight into the playSoundByID function as the key down event object pulls the keyDownEvent.Code which has a string value and sets it into the parameter of the function which matches a query selector to pull the audio and play the file. Next time to make it look good!
