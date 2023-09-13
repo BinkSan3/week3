@@ -23,3 +23,8 @@ h1 {
   margin: 5px;
   background-color: pink;
 }
+
+.drum p {
+  letter-spacing: 1px;
+  font-weight: 700;
+}
