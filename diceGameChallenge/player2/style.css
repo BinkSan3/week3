@@ -2,6 +2,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: "Tourney", cursive;
+  font-weight: 400;
 }
 main {
   margin: 20px;
@@ -10,10 +12,25 @@ main {
   align-items: center;
 }
 
+#game p {
+  width: 80%;
+  background-color: burlywood;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 10px 0px;
+  border: solid burlywood 12px;
+  border-radius: 5px;
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-size: x-large;
+  letter-spacing: 1px;
+}
+
 aside {
-  flex: 1;
-  z-index: 1;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0px;
 }
 
 aside:not(.playerCard) {
@@ -36,11 +53,16 @@ aside:not(.playerCard) {
   margin: 20px;
 }
 #game {
-  z-index: 2;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#dimensions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 #dice {
@@ -50,17 +72,39 @@ aside:not(.playerCard) {
 }
 
 button {
-  background-color: #e0ddd5;
-  color: blueviolet;
-  border: solid blueviolet 5px;
+  border: solid 5px;
   border-radius: 5%;
   width: 75%;
   padding: 20px;
   margin: 5px;
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-button:hover {
+.kill {
+  background-color: #e0ddd5;
+  color: blueviolet;
+  border: solid blueviolet 5px;
+}
+#restart {
+  background-color: #e0ddd5;
+  color: blueviolet;
+  border: solid blueviolet 5px;
+}
+#restart:hover {
   background-color: violet;
   color: #e0ddd5;
   border-color: #e0ddd5;
+}
+.kill:hover {
+  background-color: violet;
+  color: #e0ddd5;
+  border-color: #e0ddd5;
+}
+
+h2 {
+  font-family: "Tourney", cursive;
+  font-weight: 900;
 }

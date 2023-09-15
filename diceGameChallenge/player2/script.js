@@ -70,6 +70,7 @@ const dice = document.getElementById("dice");
 const currentScore = document.getElementsByClassName("currentScore");
 const wins = document.getElementsByClassName("wins");
 const holdNumber = document.getElementsByClassName("holdNumber");
+const killButtons = document.querySelectorAll("button");
 
 const whichPlayer = document.getElementById("whichPlayer");
 const roll = document.getElementById("roll");
@@ -105,11 +106,16 @@ const diceRoll = () => {
       currentScore[playerTurn].textContent = "YOU WIN";
 
       wins[playerTurn].textContent++;
-      roll.disabled = true;
-      hold.disabled = true;
     }
   } else {
     currentScore[playerTurn].textContent = "YOU LOSE";
+  }
+  if (
+    currentScore[playerTurn].textContent === "YOU WIN" ||
+    currentScore[playerTurn].textContent === "YOU LOSE"
+  ) {
+    killButtons[1].classList.remove("kill");
+    killButtons[2].classList.remove("kill");
     roll.disabled = true;
     hold.disabled = true;
   }
@@ -138,6 +144,8 @@ hold.addEventListener("click", () => {
 });
 
 restart.addEventListener("click", () => {
+  killButtons[1].classList.add("kill");
+  killButtons[2].classList.add("kill");
   reset();
 });
 
