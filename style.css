@@ -1,0 +1,35 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b7db8f;
+  padding: 0px 30px;
+}
+h1 {
+  color: #79b97c;
+  font-size: xx-large;
+}
+
+#navBar button {
+  color: #547790;
+  padding: 20px;
+  border: solid 5px #70b59f;
+  border-radius: 40px;
+  background-color: #fff1a9;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#navBar button:hover {
+  background-color: #79b97c;
+}
+
+#hoverChange {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  width: 300px;
+}
+#center {
+  display: flex;
+  justify-content: center;
+}
