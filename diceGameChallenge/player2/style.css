@@ -1,5 +1,66 @@
-#turnBox {
-  background-color: blueviolet;
-  width: 50vw;
-  height: 100vh;
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside {
+  flex: 1;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+aside:not(.playerCard) {
+  border: solid 10px white;
+}
+
+.playerCard {
+  border: solid 10px black;
+  border-radius: 1%;
+}
+
+#playerOne {
+  background-color: lightseagreen;
+  width: 50%;
+  margin: 20px;
+}
+#playerTwo {
+  background-color: orange;
+  width: 50%;
+  margin: 20px;
+}
+#game {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#dice {
+  width: 200px;
+  border-radius: 12%;
+  margin: 5px;
+}
+
+button {
+  background-color: #e0ddd5;
+  color: blueviolet;
+  border: solid blueviolet 5px;
+  border-radius: 5%;
+  width: 75%;
+  padding: 20px;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: violet;
+  color: #e0ddd5;
+  border-color: #e0ddd5;
 }

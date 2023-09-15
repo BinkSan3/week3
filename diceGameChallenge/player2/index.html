@@ -7,24 +7,30 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="playerOne">
+    <aside class="playerCard" id="playerOne">
       <h2>PLAYER 1</h2>
-      <p id="holdNumberOne"></p>
-      <p>Current Score: <span id="currentScore"></span></p>
-    </div>
-    <main>
-      <button>Restart</button>
-      <p>Player <span></span> to roll</p>
-      <img src="" alt="" />
+      <p>Wins: <span class="wins">0</span></p>
+      <p>Holding Score: <span class="holdNumber">0</span></p>
+      <p>Current Score: <span class="currentScore">0</span></p>
+    </aside>
+
+    <main id="game">
+      <button id="restart">Restart</button>
+      <p>
+        Player <strong><span id="whichPlayer"></span></strong> to roll
+      </p>
+      <img id="dice" src="../assets/dice1.png" alt="" />
 
       <button id="roll">Roll</button>
       <button id="hold">Hold</button>
     </main>
-    <div id="playerTwo">
+
+    <aside id="playerTwo">
       <h2>PLAYER 2</h2>
-      <p id="holdNumberTwo"></p>
-      <p>Current Score: <span id="currentScore"></span></p>
-    </div>
+      <p>Wins: <span class="wins">0</span></p>
+      <p>Holding Score: <span class="holdNumber">0</span></p>
+      <p>Current Score: <span class="currentScore">0</span></p>
+    </aside>
 
     <script src="./script.js"></script>
   </body>
