@@ -11,6 +11,8 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-family: "Rokkitt", serif;
+  font-size: x-large;
 }
 
 nav img {
@@ -31,12 +33,22 @@ nav img {
   padding: 2px 20px;
   height: fit-content;
   border-color: wheat;
+  font-family: "Rokkitt", serif;
+  font-size: large;
+  font-weight: 800;
+  border: solid 5px bisque;
+  border-radius: 10px;
+  background-color: salmon;
+}
+#navButton:hover {
+  background-color: brown;
 }
 
 #centreMain {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "MuseoModerno", cursive;
 }
 
 #disappearingBoxes {
@@ -45,9 +57,14 @@ nav img {
   justify-content: center;
 }
 #disappearingBoxes p {
-  background-color: aquamarine;
+  background-color: blueviolet;
   width: 200px;
-  align-self: center;
+  text-align: center;
+  width: 60%;
+  padding: 10px;
+  font-family: "Rokkitt", serif;
+  font-size: large;
+  font-weight: 800;
 }
 #disappearingBoxes div {
   margin: 0px 50px;
@@ -56,5 +73,5 @@ nav img {
   align-items: center;
   background-color: bisque;
   width: 200px;
-  padding: 0;
+  padding: 20px;
 }

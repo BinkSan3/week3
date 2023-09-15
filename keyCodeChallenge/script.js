@@ -5,6 +5,8 @@ let eventCode = document.getElementById("eventCode");
 let eventKeyCode = document.getElementById("eventKeyCode");
 let disappearingBoxes = document.getElementById("disappearingBoxes");
 
+disappearingBoxes.style.display = "none";
+
 document.addEventListener("keydown", (pressingKeyInfo) => {
   disappearingBoxes.style.display = "flex";
   eventKey.textContent = pressingKeyInfo.key;
@@ -17,4 +19,5 @@ document.addEventListener("keydown", (pressingKeyInfo) => {
 document.addEventListener("keyup", () => {
   promptChange.style.display = "block";
   disappearingBoxes.style.display = "none";
+  heading.textContent = "JavaScript Key Code";
 });
